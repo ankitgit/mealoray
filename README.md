@@ -1,6 +1,6 @@
 # mealoray
 
-This project is created with intention to learning, how to build android based application?
+This project is created with an intention to learn, how to build android based application?
 
 # Expected to achieve:
 * Invite people to join
