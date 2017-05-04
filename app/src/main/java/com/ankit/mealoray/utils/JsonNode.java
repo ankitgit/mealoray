@@ -1,13 +1,17 @@
 package com.ankit.mealoray.utils;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 public class JsonNode {
+    ObjectMapper objectMapper = new ObjectMapper();
 
-
-//ObjectMapper  objectMapper = new ObjectMaper();
-
-
-    public String toJson(){
-
-        return null;
+    public String toJson() {
+        try {
+            return objectMapper.writeValueAsString(this);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
