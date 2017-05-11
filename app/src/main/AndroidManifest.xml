@@ -26,10 +26,13 @@
         </activity>
         <activity
             android:name=".activities.LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
         <activity
             android:name=".activities.SignupActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_sign_up" />
+        <activity
+            android:name=".activities.CreateGroupActivity"
+            android:label="@string/title_activity_create_group"/>
     </application>
 
 </manifest>

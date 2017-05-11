@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.ankit.mealoray.activities.CreateGroupActivity;
 import com.ankit.mealoray.activities.LoginActivity;
 import com.ankit.mealoray.activities.SignupActivity;
 
@@ -29,15 +30,17 @@ public class Home extends AppCompatActivity
 
 
         FloatingActionButton createGroup = (FloatingActionButton) findViewById(R.id.create_group);
-        Intent intent = new Intent(this, SignupActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(this, SignupActivity.class);
+//        startActivity(intent);
         createGroup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                Intent intent =new Intent(getBaseContext(), CreateGroupActivity.class);
+                startActivity(intent);
 
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
 
